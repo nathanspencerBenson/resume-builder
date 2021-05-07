@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #478199;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  padding: 50px;
+}
+
+.cv-builder {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.cv-builder:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+.cv-builder-main {
+  display: flex;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  width: 70%;
+  padding-bottom: 50px;
+}
+
+section h1 {
+  border-bottom: 2px solid var(--primary-color);
+  font-family: "Alfa Slab One", cursive;
+  font-size: 0.9em;
+  width: 90%;
+  padding: 25px 0 10px 0;
+}
+section h1 > i {
+  margin: 0px 20px;
+  color: var(--primary-color);
+  font-size: 2em;
+}
+
+.btn-work-experience {
+  background: var(--primary-color);
+  width: 200px;
+  padding: 20px;
+  border: none;
+  align-self: center;
+  color: white;
+  margin: 50px 0;
+  font-weight: bold;
+}
+
+.btn-work-experience:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@page {
+  size: auto;
+}
+
+/* Save-as-pdf button and Template CV Button */
+
+.container-pdf-template {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.save-link,
+.template-cv-button {
+  align-self: flex-start;
+  margin-left: 5vw;
+  z-index: 2;
+  background: rgba(221, 221, 221, 0.657);
+  border: 2px solid rgba(221, 221, 221, 0.657);
+  padding: 10px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+
+.save-link {
+  top: 0;
+  left: 0;
+  align-self: flex-start;
+  margin-left: 5vw;
+}
+
+.template-cv-button {
+  align-self: flex-end;
+  margin-right: 5vw;
+}
+
+.save-link i,
+.template-cv-button i {
+  transform: scale(2);
+  margin-right: 20px;
+}
+
+.save-link:hover,
+.template-cv-button:hover {
+  border: red 2px solid;
+  cursor: pointer;
+  background: rgb(221, 221, 221);
+}

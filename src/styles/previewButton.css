@@ -1,0 +1,46 @@
+.preview-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.preview-button-container button {
+  border-radius: 5px;
+  padding: 15px 75px;
+  border: none;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.preview-button-container button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.edit-mode-button {
+  margin-right: -10px;
+}
+
+.mode-selected {
+  background: green;
+  color: white;
+}
+
+.preview-mode-button {
+  margin-left: -10px;
+}
+
+.preview-button-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  z-index: 3;
+}

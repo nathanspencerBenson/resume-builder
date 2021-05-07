@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.personal-info {
+  /* position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start; */
+  min-height: 100%;
+  background: var(--primary-color);
+  padding: 0 20px 0 20px;
+  color: rgb(224, 218, 218);
+  font-size: 0.7em;
+  padding-top: 100px;
+}
+
+.container-image {
+  width: 100%;
+}
+
+.container-website {
+  font-size: 2em;
+}
+
+.container-website-display {
+}
+.container-website a {
+  text-decoration: none;
+  color: white;
+}
+.personal-info input {
+  width: 80%;
+}
+.full-name > input {
+  font-size: 2em;
+}
+
+.container-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact i {
+  transform: scale(1.2);
+  margin-right: 50px;
+}
+
+.personal-info h1 {
+  padding: 5px;
+  margin: 50px 0 20px 0;
+  text-align: left;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.personal-info i {
+  margin: 5px 5px 5px 0;
+}
+
+.personal-info input,
+.personal-info textarea {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.personal-info input:focus {
+  outline: none;
+}
+.personal-info input::placeholder,
+.personal-info textarea::placeholder {
+  color: white;
+}
+
+.container-address {
+  display: flex;
+  flex-direction: row;
+}
+
+.personal-info-form,
+.skills-form {
+  width: 60%;
+}
+
+.personal-info-form input,
+.skills-form input {
+  background: white;
+  color: var(--primary-color);
+  width: 100%;
+  padding: 6px;
+}
+
+.personal-info-form input::placeholder,
+.skills-form input::placeholder {
+  color: var(--primary-color);
+}
+
+.skills-form label {
+  font-size: 2em;
+}
+
+.skills-form input {
+  margin: 5px 0;
+}
+
+ul {
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-delete-skill {
+  border: none;
+  background: none;
+  right: 0;
+}
+
+.btn-delete-skill:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}

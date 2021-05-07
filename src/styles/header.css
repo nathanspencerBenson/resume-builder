@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  background: #ddd;
+  padding: 10px 100px;
+}
+
+.logo {
+  background-image: url(../images/curriculum-vitae2.svg);
+  height: 100px;
+  width: 100px;
+  margin-right: 50px;
+}

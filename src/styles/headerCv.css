@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.header-cv {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.header-cv input {
+  background: none;
+  border: none;
+}
+
+.header-cv input:focus {
+  outline: none;
+}
+.container-image {
+  width: 100%;
+}
+.profile-image {
+  position: absolute;
+  left: -150px;
+  top: 50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: white 2px solid;
+  background: url("../images/head-659652_1920.png") no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.full-name {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  padding: 25px 0;
+  font-size: 1.5em;
+  margin-left: 5%;
+  border-top: 2px solid var(--primary-color);
+}
+
+.full-name input:nth-child(2) {
+  margin-left: 30%;
+  font-size: 1em;
+  color: var(--primary-color);
+}
+
+.full-name input {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.1em;
+}
